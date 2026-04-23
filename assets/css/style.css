@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Importation de polices Google Fonts */
+/* Polices : Playfair Display (titres), DM Sans (texte) */
+/* Exemple : font-family: 'Playfair Display', serif; */
+/* Exemple : font-family: 'DM Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/*
+ * Points de rupture :
+ * ==========================================================================
+ * 640px  (40rem)  - Téléphones en mode paysage (horizontal)
+ * 768px  (48rem)  - Tablettes en mode portrait (vertical)
+ * 1024px (64rem)  - Petits ordinateurs portables, tablette en mode paysage (horizontal)
+ */
+
+/**
+ * @author Charles Piquette <2535791@csfoy.ca>
+ *
+ * TABLE DES MATIERES
+ *
+ * Reset
+ *
+ */
+
+/* ------- Reset ------- */
+
+@import url(normalize.css);
