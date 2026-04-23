@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/**
+ * @author Kadige Pelouom courriel
+ *
+ * TABLE DES MATIÈRES
+ * Normalize
+ * style
+ * Règles générales
+ * Mise en page
+ *** Entête du site
+ *** Menu principal
+ *** Pied de page
+ */
+
+ /* Normalize
+   ========================================================================== */
+@import "normalize.css";
+
+/* Page style
+ =============================================== */
+ @import "style.css";
+
+ /* RÉINITIALISATION */
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(219, 202, 205);
+}
+.logo{
+    width: 30%;
+}
