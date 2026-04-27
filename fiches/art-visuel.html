@@ -141,81 +141,82 @@
                 </p>
             </section>
             <section class="zoneChasse"></section>
-        </main>
-        <!-- Si l’utilisateur n’a pas débuté une chasse -->
-        <div id="zoneAucuneChasseEnCours">
-            <h2 class="sous-titre__fiche">
-                Soumettre cette fiche comme élément trouvé
-            </h2>
-            <p>
-                <span id="statusChasse"
-                    >Aucune chasse en cours. Si vous désirez débuter une chasse,
-                    visitez la page
-                    <a href="../pages/chasse.html">Chasse</a>.</span
-                >
-            </p>
-        </div>
-
-        <!-- Si une chasse est en cours -->
-        <div id="zoneChasseEnCours" hidden>
-            <form>
-                <fieldset>
-                    <legend>
-                        <h2>
-                            Soumettre cette fiche comme indice
-                            <span id="progressionChasse"
-                                >(0 indice trouvé sur 3)</span
-                            >
-                        </h2>
-                    </legend>
-                    <ul>
-                        <li>
-                            <input
-                                type="radio"
-                                name="formChasse"
-                                value="personnage"
-                                id="personnage"
-                                class="bouton_radio"
-                            />
-                            <label for="personnage">Personnage</label>
-                        </li>
-                        <li>
-                            <input
-                                type="radio"
-                                name="formChasse"
-                                value="lieu"
-                                id="lieu"
-                                class="bouton_radio"
-                            />
-                            <label for="lieu">Lieu</label>
-                        </li>
-                        <li>
-                            <input
-                                type="radio"
-                                name="formChasse"
-                                value="objet"
-                                id="objet"
-                                class="bouton_radio"
-                            />
-                            <label for="objet">Objet</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <p id="message"></p>
+        
+            <!-- Si l’utilisateur n’a pas débuté une chasse -->
+            <div id="zoneAucuneChasseEnCours">
+                <h2 class="sous-titre__fiche">
+                    Soumettre cette fiche comme élément trouvé
+                </h2>
                 <p>
-                    <button id="btnSoumettre">Soumettre</button>
-                </p>
-            </form>
-            <ul>
-                <li>
-                    <a href="../chasse/index.html"
-                        >Vérifier votre progression de la chasse</a
+                    <span id="statusChasse"
+                        >Aucune chasse en cours. Si vous désirez débuter une chasse,
+                        visitez la page
+                        <a href="../pages/chasse.html">Chasse</a>.</span
                     >
-                </li>
-                <li>
-                    <a href="../carte/index.html">Poursuivre la chasse </a>
-                </li>
-            </ul>
-        </div>
+                </p>
+            </div>
+
+            <!-- Si une chasse est en cours -->
+            <div id="zoneChasseEnCours" hidden>
+                <form>
+                    <fieldset>
+                        <legend>
+                            <h2>
+                                Soumettre cette fiche comme indice
+                                <span id="progressionChasse"
+                                    >(0 indice trouvé sur 3)</span
+                                >
+                            </h2>
+                        </legend>
+                        <ul>
+                            <li>
+                                <input
+                                    type="radio"
+                                    name="formChasse"
+                                    value="personnage"
+                                    id="personnage"
+                                    class="bouton_radio"
+                                />
+                                <label for="personnage">Personnage</label>
+                            </li>
+                            <li>
+                                <input
+                                    type="radio"
+                                    name="formChasse"
+                                    value="lieu"
+                                    id="lieu"
+                                    class="bouton_radio"
+                                />
+                                <label for="lieu">Lieu</label>
+                            </li>
+                            <li>
+                                <input
+                                    type="radio"
+                                    name="formChasse"
+                                    value="objet"
+                                    id="objet"
+                                    class="bouton_radio"
+                                />
+                                <label for="objet">Objet</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <p id="message"></p>
+                    <p>
+                        <button id="btnSoumettre">Soumettre</button>
+                    </p>
+                </form>
+                <ul>
+                    <li>
+                        <a href="../chasse/index.html"
+                            >Vérifier votre progression de la chasse</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../carte/index.html">Poursuivre la chasse </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
     </body>
 </html>
