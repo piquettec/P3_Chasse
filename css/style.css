@@ -42,7 +42,13 @@
 /* ------- Reset ------- */
 @import url(menu.css);
 @import url(normalize.css);
-
+.sauter {
+    outline: none;
+    color: #000000;
+    display: block;
+    padding: 0.25em 0;
+    text-align: center;
+}
 body {
     display: flex;
     justify-content: center;
