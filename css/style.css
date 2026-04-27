@@ -48,6 +48,10 @@ body {
 /* ------- Typographie ------- */
 :root {
     font-family: "Afacad", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
     color: white;
 }
 
@@ -131,4 +135,30 @@ h2 {
 .image_personnage {
     width: 304px;
     height: 392px;
+}
+
+/* -------  ------- */
+
+.titre_filtre {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.filtre {
+    font-size: 16px;
+    list-style: none;
+}
+
+.filtre__type {
+    display: flex;
+    width: 405px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtre__secteur {
+    display: flex;
+    width: 830px;
+    justify-content: space-between;
+    align-items: center;
 }
