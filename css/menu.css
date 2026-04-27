@@ -10,6 +10,8 @@ div.conteneur {
     justify-content: space-between;
 }
 .nav__control {
+    display: flex;
+    align-items: flex-end;
     background-color: transparent;
     color:#fff;
     border: none;
@@ -42,8 +44,9 @@ div.conteneur {
     content: "";
     width: 1em;
     height: 1em;
-    margin-right:10px;
+    margin-right:5px;
     align-items: center;
+    
     background-image: url("../media/images/menu-ferme.png");
     background-size: contain;
     background-repeat: no-repeat;
