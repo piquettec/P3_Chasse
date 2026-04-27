@@ -176,4 +176,40 @@ h2 {
 
 .lien__image[aria-disabled] {
     pointer-events: none;
+    background-color: rgb(10, 53, 53);
+    color:white;
+}
+
+.video-frame {  
+  width: 100%; 
+}
+
+.footer {
+  text-align: center;
+}
+.menu-sociaux {
+  margin: 5em auto;
+  padding:10px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.menu-sociaux__item {
+  max-width: 100%;
+}
+.menu-sociaux__lien {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 6px;
+  background-repeat: no-repeat;
+  font-size: 0;
+  opacity: 1;
+}
+
+
+.footer__p {
+  padding: 2em;
+  text-align: center;
 }
