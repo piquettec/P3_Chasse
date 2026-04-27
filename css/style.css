@@ -37,6 +37,8 @@
 @import url(normalize.css);
 
 body {
+    display: flex;
+    justify-content: center;
     background: url(../media/images/fond_page.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,3 +121,14 @@ h2 {
 }
 
 /* -------  ------- */
+
+.liste_personnages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.image_personnage {
+    width: 304px;
+    height: 392px;
+}
