@@ -26,10 +26,34 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body{
+/*utilitaire*/
+body {
     background-color:rgb(219, 202, 205);
+    padding: 3em;
+   
+
 }
-.logo{
+.logo {
     width: 30%;
 }
+
+/*section jeu*/
+.jeu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.personnage {
+  position: relative;
+  left: 24px;
+  width: 315px;
+  height: 350px;
+  background: #4A1D21;
+  border-radius: 150px;
+  box-shadow:  16px 0px 0px 0px #0D3D63, 
+  -16px 0px 0px 0px #9D162B, 
+  0px 0px 0px 20px white;
+}
+
+
