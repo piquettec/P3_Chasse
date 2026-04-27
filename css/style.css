@@ -24,5 +24,17 @@
  */
 
 /* ------- Reset ------- */
-
+@import url(menu.css);
 @import url(normalize.css);
+.sauter {
+    outline: none;
+    background-color: #222222;
+    border-bottom: 3px solid #dba70d;
+    color: #ffffff;
+    display: block;
+    padding: 0.25em 0;
+    text-align: center;
+}
+body {
+    background-color: rgb(10, 53, 53);
+}
