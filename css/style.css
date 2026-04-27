@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+/* ------- Chasse ------- */
+@import "chasse.css";
+/* ------- Galerie de personnages ------- */
+@import "galerie.css";
+/* ------- Fiches des personnages ------- */
+@import "fiches.css";
+
 /* Importation de polices Google Fonts */
 /* Exemple : font-family: 'Amiri', serif; */
 /* H1 H2 */
@@ -122,47 +129,4 @@ h2 {
         0 -11px 0 0 #0d3d63 inset,
         5px 0 0 0 #e24141 inset,
         -5px 0 0 0 #e24141 inset;
-}
-
-/* -------  ------- */
-
-.personnage {
-    margin: 10px;
-}
-
-.liste_personnages {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.image_personnage {
-    width: 320px;
-    height: 405px;
-}
-
-/* -------  ------- */
-
-.titre_filtre {
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.filtre {
-    font-size: 16px;
-    list-style: none;
-}
-
-.filtre__type {
-    display: flex;
-    width: 405px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.filtre__secteur {
-    display: flex;
-    width: 830px;
-    justify-content: space-between;
-    align-items: center;
 }

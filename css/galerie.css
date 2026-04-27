@@ -1,0 +1,42 @@
+/* -------  ------- */
+
+.personnage {
+    margin: 10px;
+}
+
+.liste_personnages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.image_personnage {
+    width: 320px;
+    height: 405px;
+}
+
+/* -------  ------- */
+
+.titre_filtre {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.filtre {
+    font-size: 16px;
+    list-style: none;
+}
+
+.filtre__type {
+    display: flex;
+    width: 405px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtre__secteur {
+    display: flex;
+    width: 830px;
+    justify-content: space-between;
+    align-items: center;
+}
