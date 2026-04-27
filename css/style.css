@@ -126,6 +126,10 @@ h2 {
 
 /* -------  ------- */
 
+.personnage {
+    margin: 10px;
+}
+
 .liste_personnages {
     display: flex;
     flex-direction: row;
