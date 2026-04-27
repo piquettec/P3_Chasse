@@ -1,0 +1,123 @@
+
+
+header.entete {
+        position: relative;
+    }
+
+div.conteneur {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+.nav__control {
+    background-color: transparent;
+    color:#fff;
+    border: none;
+    padding: 10px;
+    min-width: 40px;
+}
+
+@media (min-width: 40rem) {
+    .nav__control {
+        display: none;
+    }
+}
+
+.nav__control:hover,
+.nav__control:active {
+    /* background-color: grey; */
+}
+
+.nav__control:focus {
+    outline: none;
+    outline-offset: -5px;
+    outline: #ffffff auto 5px;
+}
+
+
+.nav__control:before {
+    display: inline-block;
+    content: "";
+    width: 1em;
+    height: 1em;
+    margin-right:10px;
+    align-items: center;
+    background-image: url("../media/images/menu-ferme.png");
+}
+
+.nav--closed .nav__control:before {
+    background-image: url("../media/images/menu-ouvert.png");
+}
+
+/* Liste du menu */
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    align-items: flex-start;
+    width: 100%;
+}
+
+@media (min-width: 40rem) {
+    .nav__list-item {
+        display: inline-block;
+    }
+}
+
+/* Liens du menu */
+.nav__link {
+    display: block;
+    padding: 5px 10px;
+    
+}
+
+.nav__link:link,
+.nav__link:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav__link:hover {
+    color: #dba70d;
+
+}
+
+.nav__link:active {
+    color: #fff;
+}
+
+
+.nav__link:focus {
+    border-left: 5px solid  #dba70d;
+}
+
+
+.nav__link--active {
+    border-left: 5px solid  #dba70d;
+}
+
+@media (min-width: 40rem) {
+    .nav__link--active {
+        border-left: none;
+        border-bottom: 5px solid  #dba70d;
+    }
+    .nav__link:focus {
+        border-left: none;
+        border-bottom: 5px solid  #dba70d;
+    }
+}
+
+
+@media (max-width: 39.9375rem) {
+    .js .nav__list {
+        max-height: 100vh;
+        overflow: hidden;
+        transition: max-height 2s;
+    }
+
+    .js .nav--closed .nav__list {
+        max-height: 0;
+        transition: max-height 0.5s;
+    }
+}

@@ -40,7 +40,7 @@
  */
 
 /* ------- Reset ------- */
-
+@import url(menu.css);
 @import url(normalize.css);
 
 body {
