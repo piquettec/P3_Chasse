@@ -151,9 +151,14 @@
     color: white;
     text-decoration: none;
     text-align: center;
+
+    display: flex;
     width: 320px;
     height: 85px;
     padding: 15px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     background: #a22222;
     box-shadow:
         0 5px 0 0 #ffa6a6 inset,
@@ -161,6 +166,7 @@
         5px 0 0 0 #e24141 inset,
         -5px 0 0 0 #e24141 inset;
 }
+
 .icone-jeu{
   position: relative;
   left: 3.5em;
