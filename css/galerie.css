@@ -1,7 +1,9 @@
 /* -------  ------- */
 
 .personnage {
-    margin: 10px;
+    display: block;
+    justify-content: center;
+    margin: 0 10px 85px 10px;
 }
 
 .liste_personnages {
@@ -11,8 +13,9 @@
 }
 
 .image_personnage {
-    width: 320px;
-    height: 405px;
+    width: 304px;
+    height: 392px;
+    margin-bottom: 20px;
 }
 
 /* -------  ------- */
@@ -32,6 +35,7 @@
     width: 405px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .filtre__secteur {
@@ -39,4 +43,5 @@
     width: 830px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 105px;
 }
