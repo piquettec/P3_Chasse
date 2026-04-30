@@ -138,3 +138,40 @@ h2 {
         5px 0 0 0 #e24141 inset,
         -5px 0 0 0 #e24141 inset;
 }
+
+.lien__bouton:hover {
+    background: #773c47;
+    box-shadow:
+        0 5px 0 0 #a06570 inset,
+        0 -11px 0 0 #0d3d63 inset,
+        5px 0 0 0 #a06570 inset,
+        -5px 0 0 0 #986873 inset;
+}
+
+.lien__bouton:active {
+    background: #0d3d63;
+    box-shadow: 0 -11px 0 0 #773c47 inset;
+}
+
+.lien__bouton:focus {
+    background: #a22222;
+    box-shadow:
+        0 10px 0 0 #0d3d63 inset,
+        0 -10px 0 0 #0d3d63 inset,
+        10px 0 0 0 #0d3d63 inset,
+        -10px 0 0 0 #0d3d63 inset;
+}
+
+.lien__bouton[aria-disabled] {
+    background: #b4aeae;
+    box-shadow:
+        0 5px 0 0 #cecece inset,
+        0 -11px 0 0 #61686d inset,
+        5px 0 0 0 #847276 inset,
+        -5px 0 0 0 #a29094 inset;
+    pointer-events: none;
+}
+
+.lien__image[aria-disabled] {
+    pointer-events: none;
+}
