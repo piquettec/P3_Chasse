@@ -3,6 +3,9 @@
 /* Importation de polices Google Fonts */
 /* Exemple : font-family: 'Amiri', serif; */
 /* H1 H2 */
+@import url(normalize.css);
+@import url(chasse.css);
+
 @font-face {
     font-family: "DigitalDisco";
     src: url(../Polices/digital_disco/DigitalDisco.ttf) format("ttf");
@@ -34,7 +37,7 @@
 
 /* ------- Reset ------- */
 
-@import url(normalize.css);
+
 
 body {
     display: flex;
