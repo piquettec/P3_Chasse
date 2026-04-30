@@ -15,17 +15,6 @@
 
 
 
- /* RÉINITIALISATION */
-* {
-  margin: 0; 
-  padding: 0;
-  box-sizing: border-box;
-}
-/*utilitaire*/
-
-.logo {
-    width: 30%;
-}
 
 /*section jeu*/
 .jeu {
@@ -72,7 +61,6 @@
   -16px 0px 0px 0px #9D162B, 
   0px 0px 0px 20px white;
 }
-
 .icone-jeu{
   position: relative;
   left: 3.5em;
