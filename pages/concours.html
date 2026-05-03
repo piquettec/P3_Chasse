@@ -28,20 +28,23 @@
                 <h1>Formulaire de participation</h1>
     </header>
 
-        <main class="carte-conteneur">
-    <p>Courez la chance de gagner un forfait pour deux à l'Auberge des Illustres voisins incluant :</p>
-    <ul>
-        <li>Le souper à la carte</li>
-        <li>La nuitée à l'Auberge</li>
-        <li>Le petit-déjeuner à la carte</li>
-    </ul>
-    <p>Pour participer, remplissez le formulaire ci-dessous.</p>
+         <section class="intro">
+            <p>Courez la chance de gagner un forfait pour deux à l'Auberge des Illustres voisins incluant :</p>
+            <ul class="intro-list">
+                <li>Le souper à la carte</li>
+                <li>La nuitée à l'Auberge</li>
+                <li>Le petit-déjeuner à la carte</li>
+            </ul>
+            <p>Pour participer, remplissez le formulaire ci-dessous.</p>
+        </section>
 
     <h1>Formulaire de participation</h1>
 
     <div class="carte">
         <form action="#" method="post">
+            
             <fieldset>
+                <legend class="visually-hidden">Informations personnelles</legend>
 
                 <label for="prenom">Prénom</label>
                 <input type="text" id="prenom" name="prenom" required>
@@ -103,7 +106,7 @@
             </fieldset>
 
             <p class="infolettre">
-                <input type="checkbox" name="infolettre" id="infolettre">
+                <input type="checkbox" name="infolettre" id="infolettre" required>
                 <label for="infolettre">J'ai lu et accepté les règlements du concours</label>
             </p>
 
