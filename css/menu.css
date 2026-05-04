@@ -106,6 +106,13 @@
     border-radius: 20px;
 }
 
+@media (min-width: 40rem){
+    .nav.footer ul.nav__list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 @media (max-width: 39.9375rem) {
     .js .nav__list {
