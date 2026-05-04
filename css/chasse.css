@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/**
+ * @author Kadige Pelouom courriel
+ *
+ * TABLE DES MATIÈRES
+ * Normalize
+ * style
+ * Règles générales
+ * Mise en page
+ *** Entête du site
+ *** Menu principal
+ *** Pied de page
+ */
+
+ /* Normalize
+   ========================================================================== */
+@import "normalize.css";
+
+/* Page style
+ =============================================== */
+ @import "style.css";
+
+ /* RÉINITIALISATION */
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+/*utilitaire*/
+body {
+    background-color:rgb(219, 202, 205);
+    padding: 3em;
+   
+
+}
+.logo {
+    width: 30%;
+}
+
+/*section jeu*/
+.jeu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.personnage {
+  position: relative;
+  left: 24px;
+  width: 315px;
+  height: 350px;
+  background: #4A1D21;
+  border-radius: 150px;
+  box-shadow:  16px 0px 0px 0px #0D3D63, 
+  -16px 0px 0px 0px #9D162B, 
+  0px 0px 0px 20px white;
+}
+
+
