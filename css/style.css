@@ -142,16 +142,18 @@
 
 .menu-sociaux__lien {
   /* display: block; */
-  height: 30px;
   margin: 0 6px;
-  background-repeat: no-repeat;
   font-size: 0;
   opacity: 1;
 }
 
+.menu-sociaux__item:hover {
+    filter: invert(80%)
+}
 
-.footer__p {
-  padding: 2em;
+
+.text {
+  padding: 1em;
   text-align: center;
 }
 
@@ -211,7 +213,6 @@ h2 {
     color: white;
     text-decoration: none;
     text-align: center;
-
     display: flex;
     width: 320px;
     height: 85px;
