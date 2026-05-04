@@ -5,35 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Galerie de personnages</title>
         <meta name="description" content="Explorez la galerie de personnages et découvrez leurs portraits pour accéder à leurs histoires et informations détaillées.">
+        <script defer src="../js/menu.js"></script>
         <link rel="icon" type="image/x-icon" href="../media/images/favicon.jpg">
         <link rel="stylesheet" href="../css/style.css">
     </head>
 <body>
     <header class="header">
-        <img class="logo" src="../media/images/SVG/Logo.svg">
+        <img class="logo" src="../media/images/logo.svg">
         <nav class="nav">
-            <ul class="nav__liste">
-                <li class="nav__item">
-                    <a class="nav__lien" href="../index.html">Accueil</a>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="nav__link" href="../index.html">Accueil</a>
                 </li>
-                <li class="nav__item">
-                    <a class="nav__lien" href="chasse.html">Chasse aux épigraphes</a>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="chasse.html">Chasse aux épigraphes</a>
                 </li>
-                <li class="nav__item">
-                    <a class="nav__lien" href="galerie_de_personnages.html">Galerie de personnages</a>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="galerie_de_personnages.html">Galerie de personnages</a>
                 </li>
-                <li class="nav__item">
-                    <a class="nav__lien" href="carte.html">Carte</a>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="carte.html">Carte</a>
                 </li>
+            </ul>
+        </nav>
+        <img class="separateur" src="media/images/separateur-nav.png">
     </header>
     <main>
         <h1 class="titre_page">Galerie de personnages</h1>
-
-        <main>
-            <h1 class="titre_page">Galerie de personnages</h1>
-
             <div class="filtrage">
-                
                 <p class="titre_filtre">Filtrer par type d’indice :</p>
                 <ul class="filtre filtre__type">
                     <li>Personnages</li>
@@ -162,5 +161,50 @@
                 </div>
             </div>
         </main>
+        <footer>
+       <img class="separateur-footer" src="../media/images/separateur-footer.png">
+       <nav class="nav footer">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="nav__link" href="../index.html">Accueil</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="chasse.html">Chasse aux épigraphes</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="galerie_de_personnages.html">Galerie de personnages</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="carte.html">Carte</a>
+                </li>
+            </ul>
+       </nav>
+       <ul class="menu-sociaux">
+                <li class="menu-sociaux__item">
+                    <a class="menu-sociaux__lien" href="https://www.facebook.com">Facebook
+                        <img class="facebook-img" src="../media/images/facebook.png">
+                    </a>
+                </li>
+                <li class="menu-sociaux__item">
+                    <a class="menu-sociaux__lien" href="https://www.instagram.com">Instagram
+                        <img class="instagram-img" src="../media/images/instagram.png">
+                    </a>
+                </li>
+                <li class="menu-sociaux__item">
+                    <a class="menu-sociaux__lien" href="https://www.youtube.com">YouTube
+                        <img class="youtube-img" src="../media/images/youtube.png">
+                    </a>
+                </li>
+                <li class="menu-sociaux__item">
+                    <a class="menu-sociaux__lien" href="https://x.com">Twitter
+                        <img class="X-img" src="../media/images/X.png">
+                    </a>
+                </li>
+            </ul>
+        <p class="text footer">Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823</p>
+        <p class="text footer deux"> Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données « Épigraphes historiques » sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et servir de prétexte à la « Chasse aux épigraphes ».</p>
+        <p class="text footer trois">Une réalisation de Rhita Elatifi, Kadige Pelouom, Charles Piquette et Ali Neffati© Tous droits réservés 2026. Travail scolaire réalisé dans le cadre du programme Techniques d’intégration multimédia. Cégep de Sainte-Foy</p>
+
+    </footer>
     </body>
 </html>

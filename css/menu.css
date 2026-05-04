@@ -1,13 +1,11 @@
 
-
-header.entete {
-        position: relative;
-    }
-
-div.conteneur {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
+.nav {
+    font-family: "Amiri", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size:1.0625em;
+    margin-top: 30px;
+    margin-bottom:20px;
 }
 .nav__control {
     display: flex;
@@ -17,6 +15,12 @@ div.conteneur {
     border: none;
     padding: 10px;
     min-width: 40px;
+}
+@media (min-width: 40rem) {
+    .nav__list {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 @media (min-width: 40rem) {
@@ -100,6 +104,13 @@ div.conteneur {
     background-color: color-mix(in srgb, #AC4A5E 20%, rgb(0, 0, 0) 10%);
     border: 2px solid #AC4A5E;
     border-radius: 20px;
+}
+
+@media (min-width: 40rem){
+    .nav.footer ul.nav__list {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
