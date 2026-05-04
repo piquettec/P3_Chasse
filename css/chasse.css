@@ -36,6 +36,9 @@
   -16px 0px 0px 0px #9D162B, 
   0px 0px 0px 20px white;
 }
+.personnage:hover{
+  background-color: #773C47;
+}
 .objet {
   position: relative;
   left: 24px;
@@ -80,7 +83,11 @@
         5px 0 0 0 #e24141 inset,
         -5px 0 0 0 #e24141 inset;
 }
-
+a{
+  position: relative;
+  left: 20em;
+  top: 10em;
+}
 .icone-jeu{
   position: relative;
   left: 3.5em;
@@ -105,7 +112,7 @@
    view-timeline-name: --jeuScale;
   animation-timeline: --jeuScale;
   animation-name: scale;
-  animation-duration: 3ms;
+  animation-duration: 1ms;
 }
 @keyframes scale {
   from {
