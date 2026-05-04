@@ -128,14 +128,20 @@ body {
 }
 
 .menu-sociaux__lien {
-    /* display: block; */
-    margin: 0 6px;
-    font-size: 0;
-    opacity: 1;
+  /* display: block; */
+  margin: 0 6px;
+  font-size: 0;
+  opacity: 1;
 }
 
 .menu-sociaux__item:hover {
-    filter: invert(80%);
+    filter: invert(80%)
+}
+
+
+.text {
+  padding: 1em;
+  text-align: center;
 }
 
 .text {
