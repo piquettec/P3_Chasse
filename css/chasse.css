@@ -15,7 +15,17 @@
 
 
 
+ /* RÉINITIALISATION */
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+/*utilitaire*/
 
+.logo {
+    width: 30%;
+}
 
 /*section jeu*/
 .jeu {
