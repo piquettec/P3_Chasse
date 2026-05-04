@@ -62,6 +62,95 @@ body {
     background-attachment: fixed;
 }
 
+@media (min-width: 48rem){
+    .page {
+        padding:10%;
+    }
+}
+
+.logo {
+    width: 30em;
+}
+.separateur {
+    width: 100%;
+}
+.video-frame {  
+  width: 100%; 
+}
+
+.legende {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+    text-align: right;
+    margin-top:10px;
+    margin-bottom: 40px;
+}
+
+.texte {
+    margin-bottom:10px;
+}
+
+.texte.trois {
+    font-family: "Afacad", sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.footer {
+  text-align: center;
+  
+}
+
+
+.separateur-footer {
+    width:100%;
+    justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+
+@media (min-width: 48rem) {
+     .separateur-footer {
+        width:50%;
+    }
+}
+@media (min-width: 64rem) {
+    .separateur-footer {
+        width:30em;
+    }
+}
+.menu-sociaux {
+  margin: 5em auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-sociaux__item {
+  max-width: 100%;
+}
+
+.menu-sociaux__lien {
+  /* display: block; */
+  margin: 0 6px;
+  font-size: 0;
+  opacity: 1;
+}
+
+.menu-sociaux__item:hover {
+    filter: invert(80%)
+}
+
+
+.text {
+  padding: 1em;
+  text-align: center;
+}
+
+
 /* ------- Typographie ------- */
 :root {
     font-family: "Afacad", sans-serif;
@@ -125,7 +214,6 @@ h2 {
     color: white;
     text-decoration: none;
     text-align: center;
-
     display: flex;
     width: 296px;
     height: 80px;
