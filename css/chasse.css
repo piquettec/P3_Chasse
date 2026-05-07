@@ -95,6 +95,28 @@
 }
 /*utilitaire*/
 
+
+ /* Normalize
+   ========================================================================== */
+@import "normalize.css";
+
+/* Page style
+ =============================================== */
+ @import "style.css";
+
+ /* RÉINITIALISATION */
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+/*utilitaire*/
+body {
+    background-color:rgb(219, 202, 205);
+    padding: 3em;
+   
+
+}
 .logo {
     width: 30%;
 }
