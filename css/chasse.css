@@ -11,6 +11,90 @@
  *** Menu principal
  *** Pied de page
  */
+ 
+
+
+
+
+
+/*section jeu*/
+.jeu {
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 22px;
+    padding-top:50px;
+}
+.personnage {
+  position: relative;
+  left: 24px;
+  width: 315px;
+  height: 350px;
+  background: #4A1D21;
+  border-radius: 150px;
+  box-shadow:  16px 0px 0px 0px #0D3D63, 
+  -16px 0px 0px 0px #9D162B, 
+  0px 0px 0px 20px white;
+}
+.objet {
+  position: relative;
+  left: 24px;
+  width: 315px;
+  height: 350px;
+  background: #4A1D21;
+  border-radius: 150px;
+  box-shadow:  16px 0px 0px 0px #0D3D63, 
+  -16px 0px 0px 0px #9D162B, 
+  0px 0px 0px 20px white;
+}
+.lieu {
+  position: relative;
+  left: 24px;
+  width: 315px;
+  height: 350px;
+  background: #4A1D21;
+  border-radius: 150px;
+  box-shadow:  16px 0px 0px 0px #0D3D63, 
+  -16px 0px 0px 0px #9D162B, 
+  0px 0px 0px 20px white;
+}
+
+.icone-jeu{
+  position: relative;
+  left: 3.5em;
+  top: 4em;
+}
+.nom_perso{
+  position: relative;
+  top: 3.5em;
+  left: 3.5em;
+}
+.nom_objet{
+  position: relative;
+  top: 3.5em;
+  left: 5.5em;
+}
+.nom_lieu{
+   position: relative;
+  top: 4em;
+  left: 5.5em;
+}
+.jeu{
+   view-timeline-name: --jeuScale;
+  animation-timeline: --jeuScale;
+  animation-name: scale;
+  animation-duration: 3ms;
+}
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/*utilitaire*/
+
 
  /* Normalize
    ========================================================================== */
