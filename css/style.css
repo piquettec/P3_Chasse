@@ -13,6 +13,14 @@
 
 /* Importation de polices Google Fonts */
 /* Exemple : font-family: 'Amiri', serif; */
+/* H1 H2 */
+@import url(normalize.css);
+@import url(chasse.css);
+
+@font-face {
+    font-family: "DigitalDisco";
+    src: url(../Polices/digital_disco/DigitalDisco.ttf) format("ttf");
+}
 /* Nav + bouton */
 @import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* Texte */
@@ -44,6 +52,9 @@
  */
 
 /* ------- Reset ------- */
+
+
+
 @import url(menu.css);
 @import url(normalize.css);
 .sauter {
