@@ -18,12 +18,14 @@ document.getElementById("btnSoumettre").addEventListener("click", validerPieceCo
 function initialiser() {
     let intIdFicheCourante = obtenirValeurUrlParam("id");
 
-    document.querySelectorAll("#prenom").forEach((element) => {element.textContent = objJSONepigraphes[intIdFicheCourante].PRENOM;});
+    document.querySelectorAll("title").innerHTML = `${objJSONepigraphes[intIdFicheCourante].PRENOM} ${objJSONepigraphes[intIdFicheCourante].NOM} - Chasse aux épigraphes`
+
+    document.getElementById("prenom").innerHTML = objJSONepigraphes[intIdFicheCourante].PRENOM;
     document.getElementById("nom").innerHTML = objJSONepigraphes[intIdFicheCourante].NOM;
 
     document.querySelector("section > p").innerHTML = objJSONepigraphes[intIdFicheCourante].DOMAINE;
 
-    document.getElementById("url_image").setAttribute("src", "../images/" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES +".jpg");
+    document.getElementById("url_image").setAttribute("src", "../media/image_galerie/" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES +".webp");
     document.getElementById("titre_image").innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.TITRE;
     document.getElementById("credit_image").innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.CREDIT;
 
