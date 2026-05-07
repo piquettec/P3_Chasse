@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/**
+ * @author Ali Neffati
+ *
+ * TABLE DES MATIÈRES
+ * Normalize
+ * style
+ * Règles générales
+ * Mise en page
+ *** Carte
+ *** Infolettre
+ *** Pied de page
+ */
+
+ /* Normalize
+   ========================================================================== */
+@import "normalize.css";
+
+/* Page style
+ =============================================== */
+ @import "style.css";
+
+ /* RÉINITIALISATION */
+/* ------- Intro ------- */
+
+.intro {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.intro-list {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin: 0.5rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+
+ /* ------- Carte ------- */
+ 
+ .carte-conteneur {
+    padding: 0 1.25rem;
+    margin-bottom: 3rem;
+ }
+
+ .carte {
+    background: #773C47;
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+    padding: 1.5rem 1.25rem;
+ }
+
+ fieldset p{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+ }
+
+ fieldset label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1a1a2e;
+}
+
+fieldset label small {
+    color: #8a8a9a;
+    font-weight: 400;
+}
+
+fieldset input[type="text"],
+fieldset input[type="email"],
+fieldset input[type="tel"],
+fieldset select {
+    width: 100%;
+
+ /* Champs du formulaire */
+ .fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ }
+
+
+.fieldset label small {
+    color: #d4b8bc;
+    font-weight: 400;
+}
+
+.fieldset label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.fieldset input[type="text"],
+.fieldset input[type="email"],
+.fieldset input[type="tel"],
+.fieldset select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box; /* Évite le dépassement de largeur */
+    padding: 0.6rem 0.85rem;
+    border: 1.5px solid #e2ddd6;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.88rem;
+    color: #1a1a2e;
+}
+
+fieldset input:focus,
+fieldset select:focus {
+    background-color: #fff;
+    margin-top: 0.3rem;
+}
+
+.fieldset input:focus,
+.fieldset select:focus {
+    outline: none;
+    border-color: var(--couleur-primaire);
+}
+
+/* ------- Liste de format (mobile : colonne) ------- */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* ------- Pays et Province ------- */
+
+.rangee-pays {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Épigraphe */
+
+.epigrahe-title {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.epigraphe-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+
+.epigraphe-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0.85rem;
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 0.88rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.epigraphe-item:last-child {
+    border-bottom: none;
+}
+
+.coche {
+    color: green;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* ------- Infolettre ------- */
+
+.infolettre {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+
+    border-radius: 8px;
+    padding: 1rem 1.1rem;
+    margin-bottom: 1.75rem;
+}
+.infolettre input[type="checkbox"] {
+    margin-top: 0.25rem;
+}
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.infolettre label {
+    color: #fff;
+    font-size: 0.88rem;
+    cursor: pointer;
+}
+
+.infolettre input[type="checkbox"] {
+    margin-top: 0.25rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+
+
+/* ------- Bouton ------- */
+
+.bouton[type= "submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 0.65rem 1.75rem;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #e05c6a;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+} 
+
+button[type="submit"]:hover {
+    background-color: #e05c6a;
+}
+
+/* ------- Règlements ------- */
+
+.regles-title {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.regles-list {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    margin: 0 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
