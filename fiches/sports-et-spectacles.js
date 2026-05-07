@@ -21,7 +21,7 @@ function initialiser() {
     document.querySelectorAll("title").innerHTML = `${objJSONepigraphes[intIdFicheCourante].PRENOM} ${objJSONepigraphes[intIdFicheCourante].NOM} - Chasse aux épigraphes`
 
     document.getElementById("prenom").innerHTML = objJSONepigraphes[intIdFicheCourante].PRENOM;
-    document.getElementById("nom").innerHTML = objJSONepigraphes[intIdFicheCourante].NOM;
+    document.getElementById("nom").innerHTML = " " + objJSONepigraphes[intIdFicheCourante].NOM;
 
     document.querySelector("section > p").innerHTML = objJSONepigraphes[intIdFicheCourante].DOMAINE;
 
