@@ -1,0 +1,41 @@
+.fiche {
+    width: 72%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+}
+
+.contenu_fiche {
+    margin-bottom: 6rem;
+}
+
+.titre {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sous-titre__fiche {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+.image_personne {
+    text-align: center;
+}
+
+.image_personne {
+    width: 420px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.credit_image {
+    margin-top: 0.8rem;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.5;
+}
+
