@@ -85,3 +85,16 @@
 .localisation {
     margin-left: 0.5rem;
 }
+
+.description_audio,
+.preambule_audio,
+.transcription_audio,
+.credit_audio {
+    max-width: 900px;
+}
+
+.lien_audio {
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem 0;
+}

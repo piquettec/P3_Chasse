@@ -10,25 +10,25 @@
     </head>
     <body>
         <header class="header">
-            <nav class="nav">
-                <a class="logo" href="../index.html"><img class="logo" src="" alt="logo"/></a>
-                <ul class="nav__list">
-                    <li class="nav__list-item">
-                        <a class="nav__link" href="../index.html">ACCUEIL</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__link" href="../pages/chasse.html">CHASSE AUX ÉPIGRAPHES</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__link" href="../pages/galerie_de_personnages.html">GALERIE DE PERSONNAGES</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__link" href="../pages/carte.html">CARTE</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="separateur"></div>
-        </header>
+        <img class="logo" src="../media/images/logo.svg">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="nav__link" href="../index.html">Accueil</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="../pages/chasse.html">Chasse aux épigraphes</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="../pages/galerie_de_personnages.html">Galerie de personnages</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="../pages/carte.html">Carte</a>
+                </li>
+            </ul>
+        </nav>
+        <img class="separateur" src="../media/images/separateur-nav.png">
+    </header>
         <main class="fiche">
             <section class="contenu_fiche section_personne">
                 <h1 class="titre">
@@ -111,8 +111,8 @@
             </section>
             <section class="contenu_fiche section_capsule">
                 <h2 class="sous-titre__fiche">Capsule sonore</h2>
-                <p id="audio_desc"></p>
-                <audio controls id="audio_url">
+                <p class="description_audio" id="audio_desc"></p>
+                <audio controls class="lien_audio" id="audio_url">
                     <source
                         src="http://www.ville.quebec.qc.ca/sons/epigraphes/epigraphes_alleyn.mp3"
                         type="audio/mpeg"
@@ -121,20 +121,20 @@
                     la transcription textuelle qui suit.
                 </audio>
                 <h3>Transcription textuelle</h3>
-                <p id="audio_preambule">
+                <p class="preambule_audio" id="audio_preambule">
                     Tout jeune, le peintre Edmund Alleyn vivait près du fleuve.
                     L’eau, la lumière, les voyages ont nourri son imagination.
                     Esprit libre, il explorait toutes les formes d’expression.
                     Allons à la rencontre de cet artiste qui était en avance sur
                     son temps.
                 </p>
-                <p id="audio_transcription">
+                <p class="transcription_audio" id="audio_transcription">
                     Mon père est né en 1931 à Québec de parents moitié
                     irlandais, moitié anglais donc vraiment la souche anglophone
                     du Québec...
                 </p>
                 <h3>Crédits de la narration</h3>
-                <p id="audio_credit">
+                <p class="credit_audio" id="audio_credit">
                     Jennifer Alleyn est cinéaste. Elle s’investit dans la
                     transmission de l’œuvre de son père, entre autres par la
                     publication d’un site Internet et la réalisation de
