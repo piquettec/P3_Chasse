@@ -21,6 +21,9 @@
     margin-bottom: 2rem;
     margin-top: 4rem;
 }
+
+/* ---  section personne  --- */
+
 .image_personne {
     text-align: center;
 }
@@ -39,3 +42,24 @@
     line-height: 1.5;
 }
 
+.biographie {
+    max-width: 900px;
+}
+
+/* ---  section plaque  --- */
+
+.section_plaque {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.image_plaque {
+    width: 220px;
+}
+
+.transcript {
+    max-width: 400px;
+    text-align: left;
+}
