@@ -63,3 +63,25 @@
     max-width: 400px;
     text-align: left;
 }
+
+/* ---  section carte  --- */
+
+.section_carte {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carte_localisation {
+    width: 420px;
+    max-width: 100%;
+}
+
+.text_localisation {
+    text-align: left;
+}
+
+.localisation {
+    margin-left: 0.5rem;
+}
