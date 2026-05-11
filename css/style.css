@@ -48,7 +48,6 @@
 :root {
     color-scheme: light dark;
     --nav-background: light-dark(#ffffff, #000000);
-
     font-family: "Afacad", sans-serif;
     font-style: normal;
     font-weight: 400;
