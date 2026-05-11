@@ -357,6 +357,7 @@ h2 {
     text-decoration: none;
     text-align: center;
     display: flex;
+    margin-top: 3em;
     justify-content: center;
     align-items: center;
     width: 305px;
