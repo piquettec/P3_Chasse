@@ -109,7 +109,6 @@
 }
 /*utilitaire*/
 
-<<<<<<< HEAD
 
 
 
@@ -124,9 +123,6 @@
     padding-top:50px;
 }
 .personnage {
-=======
-.conteneur_bouton {
->>>>>>> origin/dev-charles
   position: relative;
   left: 24px;
   width: 315px;
@@ -137,12 +133,6 @@
   -16px 0px 0px 0px #9D162B, 
   0px 0px 0px 20px white;
 }
-<<<<<<< HEAD
-.personnage:hover{
-  background-color: #773C47;
-}
-=======
->>>>>>> origin/dev-charles
 .objet {
   position: relative;
   left: 24px;
@@ -165,16 +155,11 @@
   -16px 0px 0px 0px #9D162B, 
   0px 0px 0px 20px white;
 }
-<<<<<<< HEAD
-.lien__bouton {
-    font-family: "Amiri", serif;
-=======
 .bouton{
   position: relative;
   top: 12em;
   left: 22em;
   font-family: "Amiri", serif;
->>>>>>> origin/dev-charles
     font-size: 20px;
     font-weight: 700;
     color: white;
@@ -195,14 +180,6 @@
         5px 0 0 0 #e24141 inset,
         -5px 0 0 0 #e24141 inset;
 }
-<<<<<<< HEAD
-a{
-  position: relative;
-  left: 20em;
-  top: 10em;
-}
-=======
->>>>>>> origin/dev-charles
 .icone-jeu{
   position: relative;
   left: 3.5em;

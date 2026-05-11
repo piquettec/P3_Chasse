@@ -77,15 +77,12 @@
 * Pour cacher visuellement tout en gardant accessible un contenu:
 * screen-reader-only ou visuallyhidden **/
 
-<<<<<<< HEAD
 /* ------- Reset ------- */
 
 
 
 @import url(menu.css);
 @import url(normalize.css);
-=======
->>>>>>> origin/dev-charles
 .sauter {
     outline: none;
     color: #000000;
