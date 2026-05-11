@@ -25,7 +25,7 @@ function initialiser() {
 
     document.getElementById("domaine").innerHTML = objJSONepigraphes[intIdFicheCourante].DOMAINE;
 
-    document.getElementById("url_image").setAttribute("src", "../media/image_fiche/" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + "-table_w980.webp");
+    document.getElementById("url_image").setAttribute("src", "../media/image_fiche/" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + "_w980.webp");
     document.getElementById("titre_image").innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.TITRE;
     document.getElementById("credit_image").innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.CREDIT;
 
