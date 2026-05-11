@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /* ------- Chasse ------- */
 @import "chasse.css";
 /* ------- Galerie de personnages ------- */
@@ -10,10 +11,6 @@
 @import url("menu.css");
 
 @import url("normalize.css");
-
-@view-transition {
-    navigation: auto;
-}
 
 /* Importation de polices Google Fonts */
 /* Exemple : font-family: 'Amiri', serif; */
@@ -29,6 +26,9 @@
     src: url(../Polices/digital_disco/DigitalDisco.ttf) format("ttf");
 }
 
+@view-transition {
+    navigation: auto;
+}
 /*
  * Points de rupture :
  * ==========================================================================
@@ -304,58 +304,29 @@ h2 {
 }
 
 ::view-transition-old(root) {
-    animation:
-        fade-out 0.4s ease-in forwards,
-        zoom-out 0.4s ease-in forwards;
+    animation: fade-out 0.25s ease;
 }
 
 ::view-transition-new(root) {
-    animation:
-        fade-in 0.6s ease-out forwards,
-        zoom-in 0.6s ease-out forwards;
+    animation: fade-in 0.25s ease;
 }
 
 @keyframes fade-out {
     from {
         opacity: 1;
-        filter: brightness(1);
     }
 
     to {
         opacity: 0;
-        filter: brightness(0.7);
     }
 }
 
 @keyframes fade-in {
     from {
         opacity: 0;
-        filter: blur(8px) brightness(0.6);
     }
 
     to {
         opacity: 1;
-        filter: blur(0) brightness(1);
-    }
-}
-
-@keyframes zoom-out {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.06);
-    }
-}
-
-
-@keyframes zoom-in {
-    from {
-        transform: scale(0.96);
-    }
-
-    to {
-        transform: scale(1);
     }
 }

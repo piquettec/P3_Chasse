@@ -7,6 +7,7 @@
 
 .carte_personne {
     display: flex;
+    flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
     gap: 1.5em;
@@ -82,6 +83,36 @@
 .transcription_audio {
     padding: 1rem;
     max-height: 12rem;
+}
+
+@media (min-width: 48rem) {
+    .fiche {
+        width: 82%;
+        max-width: 900px;
+    }
+
+    .épigraphe {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .image_plaque {
+        width: 18rem;
+    }
+
+    .carte_localisation {
+        width: 660px;
+        height: 490px;
+    }
+
+    .text_localisation {
+        width: 40%;
+    }
+
+    .lien_audio {
+        max-width: 32rem;
+    }
 }
 
 @media (min-width: 64rem) {
