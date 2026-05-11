@@ -328,7 +328,7 @@ const objJSONepigraphes = {
           "TITRE": "Maurice Pollack",
           "CREDIT": "Photo Fondation Maurice Pollack"
       },
-      "DOMAINE": "Économie et politique",
+      "DOMAINE": "Économie-et-politique",
       "CHASSE": {
           "CATEGORIE": "lieu",
           "INDICE": " dans un pavillon de l’Université Laval.",

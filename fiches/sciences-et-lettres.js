@@ -23,20 +23,20 @@ function initialiser() {
     document.getElementById("prenom").innerHTML = objJSONepigraphes[intIdFicheCourante].PRENOM;
     document.getElementById("nom").innerHTML = " " + objJSONepigraphes[intIdFicheCourante].NOM;
 
-    document.querySelector("section > p").innerHTML = objJSONepigraphes[intIdFicheCourante].DOMAINE;
+    document.getElementById("domaine").innerHTML = objJSONepigraphes[intIdFicheCourante].DOMAINE;
 
-    document.getElementById("url_image").setAttribute("src", "../media/image_galerie/" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES +".webp");
+    document.getElementById("url_image").setAttribute("src", "../media/image_fiche/" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + "_w980.webp");
     document.getElementById("titre_image").innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.TITRE;
     document.getElementById("credit_image").innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.CREDIT;
 
     document.getElementById("notes_biographiques").innerHTML = objJSONepigraphes[intIdFicheCourante].BIOGRAPHIE;
 
-    document.getElementById("carteZoom").setAttribute("src", "../images/zoomgooglemap_" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + ".png",);
+    document.getElementById("carteZoom").setAttribute("src", "../media/carte_fiche/" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + ".webp",);
     document.getElementById("arrondissement").innerHTML = objJSONepigraphes[intIdFicheCourante].ARRONDISSEMENT;
     document.getElementById("quartier").innerHTML = objJSONepigraphes[intIdFicheCourante].QUARTIER;
     document.getElementById("adresse").innerHTML = objJSONepigraphes[intIdFicheCourante].ADRESSE;
 
-    document.getElementById("url_plaque").setAttribute("src", "../images/plaque_" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + ".png",);
+    document.getElementById("url_plaque").setAttribute("src", "../media/images/Épigraphes/2x/" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + "_w638.png",);
     document.getElementById("url_plaque").setAttribute("alt", "Épigraphe de " + objJSONepigraphes[intIdFicheCourante].PRENOM + " " + objJSONepigraphes[intIdFicheCourante].NOM,);
     document.getElementById("transcript").innerHTML = objJSONepigraphes[intIdFicheCourante].PLAQUE_TRANSCRIPTION;
 

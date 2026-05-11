@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /* ------- Chasse ------- */
 @import "chasse.css";
 /* ------- Galerie de personnages ------- */
@@ -11,6 +12,7 @@
 
 @import "normalize.css";
 
+@import "carte.css";
 /* Importation de polices Google Fonts */
 /* Exemple : font-family: 'Amiri', serif; */
 /* Nav + bouton */
@@ -25,6 +27,9 @@
     src: url(../Polices/digital_disco/DigitalDisco.ttf) format("ttf");
 }
 
+@view-transition {
+    navigation: auto;
+}
 /*
  * Points de rupture :
  * ==========================================================================
@@ -156,10 +161,20 @@ h2 {
 }
 
 @media (min-width: 64rem) {
-    h2 {
-        font-family: "DigitalDisco";
-        font-size: 40px;
-        font-weight: 500;
+    .lien__bouton {
+        width: 296px;
+        height: 80px;
+        padding: 15px 12px;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 48rem) {
+    .lien__bouton {
+        width: 300px;
+        height: 80px;
+        padding: 15px 12px;
+        gap: 10px;
     }
 }
 
@@ -261,6 +276,9 @@ h2 {
     margin-top: 3em;
     justify-content: center;
     align-items: center;
+    width: 305px;
+    height: 80px;
+    padding: 15px 12px;
     gap: 10px;
     background: #a22222;
     box-shadow:
@@ -308,7 +326,7 @@ h2 {
 .lien__image[aria-disabled] {
     pointer-events: none;
     background-color: rgb(10, 53, 53);
-    color:white;
+    color: white;
 }
 
 .personnage {

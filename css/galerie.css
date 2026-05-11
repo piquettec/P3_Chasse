@@ -1,52 +1,106 @@
-.contenu_galerie {
-    width: 1020px;
-    justify-content: center;
-}
-
-/* -------  ------- */
-
-.carte_personnage {
-    display: block;
-    justify-content: center;
-    margin: 0 10px 85px 10px;
-}
-
-.liste_personnages {
+.galerie_personnage {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
-.image_personnage {
-    width: 304px;
-    height: 392px;
-    margin-bottom: 20px;
+.filtrage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-/* -------  ------- */
 
 .titre_filtre {
     font-size: 24px;
     font-weight: 400;
+    margin-bottom: 0.8rem;
+    text-align: center;
 }
 
 .filtre {
-    font-size: 16px;
     list-style: none;
-}
+    margin: 0 0 2rem 0;
 
-.filtre__type {
     display: flex;
-    width: 405px;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    gap: 0.8rem;
+    text-align: center;
 }
 
+.filtre__type,
 .filtre__secteur {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+
+.liste_personnages {
+    width: 100%;
     display: flex;
-    width: 830px;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 105px;
+    gap: 2.5rem;
+}
+
+.carte_personnage {
+    width: 100%;
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 48rem) {
+    .filtre {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .liste_personnages {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image_personnage {
+        width: 304px;
+        height: 392px;
+        margin-bottom: 20px;
+    }
+
+    .carte_personnage {
+        display: block;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 64rem) {
+    .filtre__type {
+        display: flex;
+        width: 405px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .filtre__secteur {
+        display: flex;
+        width: 830px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 105px;
+    }
+
+    .liste_personnages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
