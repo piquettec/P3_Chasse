@@ -66,7 +66,19 @@
     color: white;
 }
 
+nav a {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: calc(var(--i) * 0.15s);
+}
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /** Accessibilité
 * Pour cacher visuellement tout en gardant accessible un contenu:
 * screen-reader-only ou visuallyhidden **/
