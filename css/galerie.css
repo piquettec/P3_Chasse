@@ -52,6 +52,31 @@
     align-items: center;
 }
 
+@media (min-width: 48rem) {
+    .filtre {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .liste_personnages {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image_personnage {
+        width: 304px;
+        height: 392px;
+        margin-bottom: 20px;
+    }
+
+    .carte_personnage {
+        display: block;
+        justify-content: center;
+    }
+}
+
 @media (min-width: 64rem) {
     .filtre__type {
         display: flex;
