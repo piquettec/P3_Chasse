@@ -198,7 +198,7 @@ h2 {
 
 @media (min-width: 48rem) {
     .lien__bouton {
-        width: 296px;
+        width: 300px;
         height: 80px;
         padding: 15px 12px;
         gap: 10px;
@@ -215,6 +215,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 305px;
+    height: 80px;
+    padding: 15px 12px;
+    gap: 10px;
     background: #a22222;
     box-shadow:
         0 5px 0 0 #ffa6a6 inset,

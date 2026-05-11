@@ -16,14 +16,14 @@
     padding: 10px;
     min-width: 40px;
 }
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
     .nav__list {
         display: flex;
         justify-content: flex-end;
     }
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
     .nav__control {
         display: none;
     }
@@ -70,7 +70,7 @@
     width: 100%;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
     .nav__list-item {
         display: inline-block;
     }
@@ -106,7 +106,7 @@
     border-radius: 20px;
 }
 
-@media (min-width: 40rem){
+@media (min-width: 48rem){
     .nav.footer ul.nav__list {
         display: flex;
         justify-content: center;
@@ -114,7 +114,7 @@
 }
 
 
-@media (max-width: 39.9375rem) {
+@media (max-width: 48rem) {
     .js .nav__list {
         max-height: 100vh;
         overflow: hidden;
