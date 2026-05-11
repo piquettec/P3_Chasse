@@ -5,35 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Galerie de personnages</title>
         <meta name="description" content="Explorez la galerie de personnages et découvrez leurs portraits pour accéder à leurs histoires et informations détaillées.">
+        <script defer src="../js/menu.js"></script>
         <link rel="icon" type="image/x-icon" href="../media/images/favicon.jpg">
         <link rel="stylesheet" href="../css/style.css">
     </head>
 <body>
     <header class="header">
-        <img class="logo" src="../media/images/SVG/Logo.svg">
+        <img class="logo" src="../media/images/logo.svg">
         <nav class="nav">
-            <ul class="nav__liste">
-                <li class="nav__item">
-                    <a class="nav__lien" href="../index.html">Accueil</a>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="nav__link" href="../index.html">Accueil</a>
                 </li>
-                <li class="nav__item">
-                    <a class="nav__lien" href="chasse.html">Chasse aux épigraphes</a>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="chasse.html">Chasse aux épigraphes</a>
                 </li>
-                <li class="nav__item">
-                    <a class="nav__lien" href="galerie_de_personnages.html">Galerie de personnages</a>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="galerie_de_personnages.html">Galerie de personnages</a>
                 </li>
-                <li class="nav__item">
-                    <a class="nav__lien" href="carte.html">Carte</a>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="carte.html">Carte</a>
                 </li>
+            </ul>
+        </nav>
+        <img class="separateur" src="media/images/separateur-nav.png">
     </header>
     <main>
         <h1 class="titre_page">Galerie de personnages</h1>
-
-        <main>
-            <h1 class="titre_page">Galerie de personnages</h1>
-
             <div class="filtrage">
-                
                 <p class="titre_filtre">Filtrer par type d’indice :</p>
                 <ul class="filtre filtre__type">
                     <li>Personnages</li>
@@ -51,116 +50,148 @@
             </div>
 
             <div class="liste_personnages">
-                <div class="personnage">
-                    <img class="image_personnage" src="" alt="" />
+                <div class="carte_personnage">
+                    <a class="lien__image" href="../fiches/art-visuel.html"><img class="image_personnage" src="../media/image_galerie/edmund_w608.webp" alt=""/></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/art-visuel.html"
+                        <a class="lien__bouton" href="../fiches/art-visuel.html?id=e0001"
                             >Consulter la fiche de Edmund Alleyn</a
                         >
                     </div>
                 </div>
-                <div class="personnage">
-                    <img
-                        class="image_personnage"
-                        src="../media/images/Auber/e0002_aubert_degaspe_500.jpg"
-                        alt=""
-                    />
+                <div class="carte_personnage">
+                    <a href="../fiches/sciences-et-lettres.html"><img class="image_personnage" src="../media/image_galerie/philippe-joseph_w608.webp" alt=""/></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/sciences-et-lettres.html"
-                            >Consulter la fiche de Philippe-Joseph Aubert de
-                            Gaspé</a
+                        <a class="lien__bouton" href="../fiches/sciences-et-lettres.html?id=e0002"
+                            >Consulter la fiche de Philippe-Joseph Aubert deGaspé</a
                         >
                     </div>
                 </div>
-                <div class="personnage">
-                    <img class="image_personnage" src="" alt="" />
+                <div class="carte_personnage">
+                    <a href="../fiches/sports-et-spectacles.html"><img class="image_personnage" src="../media/image_galerie/henriette_w608.webp" alt="" /></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/sports-et-spectacles.html"
+                        <a class="lien__bouton" href="../fiches/sports-et-spectacles.html?id=e0004"
                             >Consulter la fiche d'Henriette Belley</a
                         >
                     </div>
                 </div>
-                <div class="personnage">
-                    <img
-                        class="image_personnage"
-                        src="../media/images/Blatter/e0005_robert_blatter_350.@2x@2x.jpg"
-                        alt=""
-                    />
+                <div class="carte_personnage">
+                    <a href="../fiches/art-visuel.html"><img class="image_personnage" src="../media/image_galerie/robert_w608.webp" alt=""/></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/art-visuel.html"
+                        <a class="lien__bouton" href="../fiches/art-visuel.html?id=e0005"
                             >Consulter la fiche de Robert Blatter</a
                         >
                     </div>
                 </div>
-                <div class="personnage">
-                    <img class="image_personnage" src="" alt="" />
+                <div class="carte_personnage">
+                    <a href="../fiches/economie-et-politique.html"><img class="image_personnage" src="../media/image_galerie/joseph_w608.webp" alt="" /></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/economie-et-politique.html"
+                        <a class="lien__bouton" href="../fiches/economie-et-politique.html?id=e0007"
                             >Consulter la fiche de Joseph Knight Boswell</a
                         >
                     </div>
                 </div>
-                <div class="personnage">
-                    <img class="image_personnage" src="" alt="" />
+                <div class="carte_personnage">
+                    <a href="../fiches/economie-et-politique.html"><img class="image_personnage" src="../media/image_galerie/marthe_w608.webp" alt="" /></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/economie-et-politique.html"
+                        <a class="lien__bouton" href="../fiches/economie-et-politique.html?id=e0008"
                             >Consulter la fiche de Marthe Caillaud-Simard</a
                         >
                     </div>
                 </div>
-                <div class="personnage">
-                    <img class="image_personnage" src="" alt="" />
+                <div class="carte_personnage">
+                    <a href="../fiches/sports-et-spectacles.html"><img class="image_personnage" src="../media/image_galerie/johnny_w608.webp" alt="" /></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/sports-et-spectacles.html"
+                        <a class="lien__bouton" href="../fiches/sports-et-spectacles.html?id=e0012"
                             >Consulter la fiche de Johnny Farago</a
                         >
                     </div>
                 </div>
-                <div class="personnage">
-                    <img class="image_personnage" src="" alt="" />
+                <div class="carte_personnage">
+                    <a href="../fiches/sports-et-spectacles.html"><img class="image_personnage" src="../media/image_galerie/camille_w608.webp" alt="" /></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/sports-et-spectacles.html"
+                        <a class="lien__bouton" href="../fiches/sports-et-spectacles.html?id=e0015"
                             >Consulter la fiche de Camille Henry</a
                         >
                     </div>
                 </div>
-                <div class="personnage">
-                    <img class="image_personnage" src="" alt="" />
+                <div class="carte_personnage">
+                    <a href="../fiches/art-visuel.html"><img class="image_personnage" src="../media/image_galerie/louis_w608.webp" alt="" /></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/art-visuel.html"
+                        <a class="lien__bouton" href="../fiches/art-visuel.html?id=e0016"
                             >Consulter la fiche de Louis Jobin</a
                         >
                     </div>
                 </div>
-                <div class="personnage">
-                    <img
-                        class="image_personnage"
-                        src="../media/images/Mohr/e0019_sigismund-mohr_715.jpg"
-                        alt=""
-                    />
+                <div class="carte_personnage">
+                    <a href="../fiches/sciences-et-lettres.html"><img class="image_personnage" src="../media/image_galerie/sigismund_w608.webp" alt=""/></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/sciences-et-lettres.html"
+                        <a class="lien__bouton" href="../fiches/sciences-et-lettres.html?id=e0019"
                             >Consulter la fiche de Sigismund Mohr</a
                         >
                     </div>
                 </div>
-                <div class="personnage">
-                    <img class="image_personnage" src="" alt="" />
+                <div class="carte_personnage">
+                    <a href="../fiches/art-visuel.html"><img class="image_personnage" src="../media/image_galerie/alfred_w608.webp" alt="" /></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/art-visuel.html"
+                        <a class="lien__bouton" href="../fiches/art-visuel.html?id=e0021"
                             >Consulter la fiche d'Alfred Pellan</a
                         >
                     </div>
                 </div>
-                <div class="personnage">
-                    <img class="image_personnage" src="" alt="" />
+                <div class="carte_personnage">
+                    <a href="../fiches/economie-et-politique.html"><img class="image_personnage" src="../media/image_galerie/maurice_w608.webp" alt="" /></a>
                     <div class="bouton">
-                        <a class="lien__bouton" href="../fiches/economie-et-politique.html"
+                        <a class="lien__bouton" href="../fiches/economie-et-politique.html?id=e0022"
                             >Consulter la fiche de Maurice Pollack</a
                         >
                     </div>
                 </div>
             </div>
         </main>
+        <footer>
+       <img class="separateur-footer" src="../media/images/separateur-footer.png">
+       <nav class="nav footer">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="nav__link" href="../index.html">Accueil</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="chasse.html">Chasse aux épigraphes</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="galerie_de_personnages.html">Galerie de personnages</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="carte.html">Carte</a>
+                </li>
+            </ul>
+       </nav>
+       <ul class="menu-sociaux">
+                <li class="menu-sociaux__item">
+                    <a class="menu-sociaux__lien" href="https://www.facebook.com">Facebook
+                        <img class="facebook-img" src="../media/images/facebook.png">
+                    </a>
+                </li>
+                <li class="menu-sociaux__item">
+                    <a class="menu-sociaux__lien" href="https://www.instagram.com">Instagram
+                        <img class="instagram-img" src="../media/images/instagram.png">
+                    </a>
+                </li>
+                <li class="menu-sociaux__item">
+                    <a class="menu-sociaux__lien" href="https://www.youtube.com">YouTube
+                        <img class="youtube-img" src="../media/images/youtube.png">
+                    </a>
+                </li>
+                <li class="menu-sociaux__item">
+                    <a class="menu-sociaux__lien" href="https://x.com">Twitter
+                        <img class="X-img" src="../media/images/X.png">
+                    </a>
+                </li>
+            </ul>
+        <p class="text footer">Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823</p>
+        <p class="text footer deux"> Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données « Épigraphes historiques » sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et servir de prétexte à la « Chasse aux épigraphes ».</p>
+        <p class="text footer trois">Une réalisation de Rhita Elatifi, Kadige Pelouom, Charles Piquette et Ali Neffati© Tous droits réservés 2026. Travail scolaire réalisé dans le cadre du programme Techniques d’intégration multimédia. Cégep de Sainte-Foy</p>
+
+    </footer>
     </body>
 </html>
