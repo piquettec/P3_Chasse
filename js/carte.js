@@ -32,7 +32,7 @@ const objCarte = {
  
             const strGabaritContenuInfobulle =
                 `<div class="infobulle">
-                <div class="image"><img width="200" src="../media/map-marqueur/${strIdEpigraphe}_${objEpigrapheCourant.PRENOM}_${objEpigrapheCourant.NOM}.webp"/></div>
+                <div class="image"><img src="../media/image_fiche/${objEpigrapheCourant.SUFFIXE_IMAGES}_w490.webp"/></div>
                 <div class="titre">${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</div>
                 <div class="adresse">Adresse : ${objEpigrapheCourant.ADRESSE} </div>
                 <a class="btn" href="../fiches/${objEpigrapheCourant.DOMAINE}.html?id=${strIdEpigraphe}&titre=${objEpigrapheCourant.PRENOM}-${objEpigrapheCourant.NOM}">Consulter la fiche de ${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</a>
