@@ -1,80 +1,8 @@
-.fiche {
-    width: 72%;
-    max-width: 950px;
-    margin: 0 auto;
-    padding-bottom: 8rem;
-}
-
-.contenu_fiche {
-    margin-bottom: 6rem;
-}
-
-.titre {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.sous-titre__fiche {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    margin-top: 4rem;
-}
-
-/* ---  section personne  --- */
-
-.image_personne {
-    text-align: center;
-}
-
-.image_personne {
-    width: 420px;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
 .credit_image {
     margin-top: 0.8rem;
     font-size: 0.75rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.5;
-}
-
-.biographie {
-    max-width: 900px;
-}
-
-/* ---  section plaque  --- */
-
-.section_plaque {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.épigraphe {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-}
-
-.image_plaque {
-    width: 15rem;
-}
-
-.transcript {
-    max-width: 400px;
-    text-align: left;
-}
-
-/* ---  section carte  --- */
-
-.section_carte {
-    display: flex;
-    flex-direction: column;
 }
 
 .carte_personne {
@@ -85,7 +13,7 @@
 }
 
 .carte_localisation {
-    width: 660px;
+    width: 330px;
     max-width: 100%;
 }
 
@@ -93,15 +21,120 @@
     margin-left: 0.5rem;
 }
 
-.description_audio,
-.preambule_audio,
-.transcription_audio,
-.credit_audio {
-    max-width: 900px;
+.fiche {
+    width: 330px;
+    margin: 0 auto;
+    padding-bottom: 6rem;
+}
+
+.contenu_fiche {
+    margin-bottom: 4rem;
+}
+
+.titre {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.sous-titre__fiche {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.image_personne {
+    max-width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.credit_image {
+    text-align: center;
+}
+
+.section_plaque {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.épigraphe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.image_plaque {
+    width: 100%;
+    max-width: 18rem;
+}
+
+.section_carte {
+    display: flex;
+    flex-direction: column;
 }
 
 .lien_audio {
     width: 100%;
-    max-width: 500px;
     margin: 2rem 0;
+}
+
+.transcription_audio {
+    padding: 1rem;
+    max-height: 12rem;
+}
+
+@media (min-width: 64rem) {
+    .fiche {
+        width: 72%;
+        max-width: 950px;
+        margin: 0 auto;
+        padding-bottom: 8rem;
+    }
+
+    .biographie {
+        max-width: 900px;
+    }
+
+    .titre {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .sous-titre__fiche {
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+    }
+
+    .image_personne {
+        width: 420px;
+        margin: 0 auto;
+    }
+
+    .épigraphe {
+        gap: 3rem;
+        flex-direction: row;
+    }
+
+    .carte_personne {
+        flex-direction: row;
+    }
+
+    .carte_localisation {
+        width: 660px;
+        max-width: 100%;
+    }
+
+    .lien_audio {
+        max-width: 500px;
+    }
+
+    .description_audio,
+    .preambule_audio,
+    .transcription_audio,
+    .credit_audio {
+        max-width: 900px;
+    }
 }
