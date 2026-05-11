@@ -55,10 +55,9 @@
     background: url(../media/images/fond_page.png);
     background-repeat: no-repeat;
     background-size: cover;
-
-    --menu-light: #ffffff;
-    --menu-dark: #000000;
-
+    
+    color-scheme: light dark;
+    --nav-background: light-dark(#ffffff, #000000);
     font-family: "Afacad", sans-serif;
     font-style: normal;
     font-weight: 400;
