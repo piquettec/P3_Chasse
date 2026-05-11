@@ -31,7 +31,7 @@ function initialiser() {
 
     document.getElementById("notes_biographiques").innerHTML = objJSONepigraphes[intIdFicheCourante].BIOGRAPHIE;
 
-    document.getElementById("carteZoom").setAttribute("src", "../images/zoomgooglemap_" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + ".png",);
+    document.getElementById("carteZoom").setAttribute("src", "../media/carte_fiche/" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + ".png",);
     document.getElementById("arrondissement").innerHTML = objJSONepigraphes[intIdFicheCourante].ARRONDISSEMENT;
     document.getElementById("quartier").innerHTML = objJSONepigraphes[intIdFicheCourante].QUARTIER;
     document.getElementById("adresse").innerHTML = objJSONepigraphes[intIdFicheCourante].ADRESSE;

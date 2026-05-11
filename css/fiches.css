@@ -74,18 +74,19 @@
 
 .section_carte {
     display: flex;
-    gap: 3rem;
+    flex-direction: column;
+}
+
+.carte_personne {
+    display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 1.5em;
 }
 
 .carte_localisation {
-    width: 420px;
+    width: 660px;
     max-width: 100%;
-}
-
-.text_localisation {
-    text-align: left;
 }
 
 .localisation {
