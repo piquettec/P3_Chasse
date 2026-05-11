@@ -3,7 +3,7 @@
     font-family: "Amiri", serif;
     font-weight: 500;
     font-style: italic;
-    font-size:1.0625em;
+    font-size:1.3em;
     margin-top: 30px;
     margin-bottom:20px;
 }
@@ -90,7 +90,9 @@
 }
 
 .nav__link:hover {
-    background: light-dark( var(--menu-light), var(--menu-dark));
+    
+    background: var(--nav-background);
+
     color: #AC4A5E;
     border: 2px solid #AC4A5E;
     border-radius: 20px;
