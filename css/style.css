@@ -74,6 +74,7 @@
     color: white;
 }
 
+
 /** Accessibilité
 * Pour cacher visuellement tout en gardant accessible un contenu:
 * screen-reader-only ou visuallyhidden **/
@@ -300,9 +301,7 @@ h2 {
 .text.trois {
     font-family: "Afacad", sans-serif;
     font-size: 1.1em;
-    text-transform: uppercase;
     margin-top: 2em;
-    margin-top: 30px;
 }
 
 .footer {
@@ -347,7 +346,7 @@ h2 {
 }
 
 .menu-sociaux__item:hover {
-    filter: invert(80%)
+    filter: invert(50%)
 }
 
 
