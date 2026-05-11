@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chasse aux épigraphes</title>
         <script defer src="../js/menu.js"></script>
+        <script defer src="../chasse/chasse.js"></script>
+        <script defer src="../fiches/_epigraphe.js"></script>
         <meta name="description" content="Accédez à la chasse aux épigraphes et explorez les différentes étapes de l’expérience pour résoudre le mystère.">
         <link rel="icon" type="image/x-icon" href="../media/images/favicon.jpg">
         <link rel="stylesheet" href="../css/style.css">
@@ -30,8 +32,8 @@
         </nav>
         <img class="separateur" src="../media/images/separateur-nav.png">
     </header>
-<main class="">
-    <section class="instructions">
+    <main>
+        <section class="instructions">
         <h1 class="titre">La chasse aux épigraphes</h1>
             <p class="paragraphe">La chasse est composée de 12 épigraphes 
                 qui ont été sélectionnées pour leur intérêt historique ou anecdotique.
@@ -46,70 +48,42 @@
                 </ul>
     </section>
     <section class="section_jeu">
-            <h1>Tableau du jeu Chasse aux épigraphes</h1>
+        <h1>Tableau du jeu Chasse aux épigraphes</h1>
+        <p id="messageEtatChasse">Aucune chasse en cours</p>
+        <span id="personnageSegment">Un artiste peintre avant-gardiste</span>
+        <span id="objetSegment"> a lu le roman «Les Anciens canadiens» </span>
+        <span id="lieuSegment"> à la maison Kerhulu.</span>
                 <div class="jeu">
+                    <p id="zoneEnigme" hidden>
                 <div class="personnage">
                     <img class="icone-jeu" src="/media/images/SVG/mini-humain.svg" alt="icone de personnage">
-                        <p class="nom_perso">personnage</p>
+                        <h3>Personne <span id="personnageMessageTrouve" hidden>(trouvé)</span></h3>
+                <p id="personnageIndice">?</p>
                 </div>
                 <div class="objet">
                     <img class="icone-jeu" src="/media/images/SVG/icone-object.svg" alt="icone d'objet">
-                        <p class="nom_objet">objet</p>
+                        <h3>Objet <span id="objetMessageTrouve" hidden>(trouvé)</span></h3>
+                <p id="objetIndice">?</p>
                 </div>
                 <div class="lieu">
                     <img class="icone-jeu" src="/media/images/SVG/icone-carte.svg" alt="icone de carte">
-                        <p class="nom_lieu">lieu</p>
+                        <h3>Lieu <span id="lieuMessageTrouve" hidden>(trouvé)</span></h3>
+                <p id="lieuIndice">?</p>
                 </div>
                 </div>
-                  <a class="lien__bouton" href="">Piger une chasse</a>
+                
+                  <button class="lien__bouton" id="btnDebuterChasse">Piger une chasse</button>
   
     </section>
-    <footer class="footer">
-       <img class="separateur-footer" src="../media/images/separateur-footer.png">
-       <nav class="nav footer">
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a class="nav__link" href="../index.html">Accueil</a>
-                </li>
-                <li class="nav__list-item">
-                    <a class="nav__link" href="chasse.html">Chasse aux épigraphes</a>
-                </li>
-                <li class="nav__list-item">
-                    <a class="nav__link" href="galerie_de_personnages.html">Galerie de personnages</a>
-                </li>
-                <li class="nav__list-item">
-                    <a class="nav__link" href="carte.html">Carte</a>
-                </li>
-            </ul>
-       </nav>
-       <ul class="menu-sociaux">
-                <li class="menu-sociaux__item">
-                    <a class="menu-sociaux__lien" href="https://www.facebook.com">Facebook
-                        <img class="facebook-img" src="../media/images/facebook.png">
-                    </a>
-                </li>
-                <li class="menu-sociaux__item">
-                    <a class="menu-sociaux__lien" href="https://www.instagram.com">Instagram
-                        <img class="instagram-img" src="../media/images/instagram.png">
-                    </a>
-                </li>
-                <li class="menu-sociaux__item">
-                    <a class="menu-sociaux__lien" href="https://www.youtube.com">YouTube
-                        <img class="youtube-img" src="../media/images/youtube.png">
-                    </a>
-                </li>
-                <li class="menu-sociaux__item">
-                    <a class="menu-sociaux__lien" href="https://x.com">Twitter
-                        <img class="X-img" src="../media/images/X.png">
-                    </a>
-                </li>
-            </ul>
-        <p class="text footer">Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823</p>
-        <p class="text footer deux"> Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données « Épigraphes historiques » sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et servir de prétexte à la « Chasse aux épigraphes ».</p>
-        <p class="text footer trois">Une réalisation de Rhita Elatifi, Kadige Pelouom, Charles Piquette et Ali Neffati© Tous droits réservés 2026. Travail scolaire réalisé dans le cadre du programme Techniques d’intégration multimédia. Cégep de Sainte-Foy</p>
-
+        <div id="zoneMessageChasseCompletee" hidden>
+            <h2 id="messageChasseCompletee">Bravo! Votre avez complété la chasse!</h2>
+            <button type="button" id="btnConcours">Participer au concours</button>
         </div>
-    </footer>
+
+        <a id="lienChercherIndices" href="carte.html" hidden>Chercher des indices</a>
+
+        <button type="button" id="btnDemarrerNouvelleChasse" hidden>Voulez-vous démarrer une nouvelle chasse?</button>
+    </main>
     
 </body>
 </html>

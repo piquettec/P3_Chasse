@@ -18,7 +18,7 @@
 
 /*section jeu*/
 .jeu {
-   display: grid;
+   display: flex;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 22px;
@@ -104,7 +104,6 @@
 
 /*section jeu*/
 .jeu {
-   display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 22px;
