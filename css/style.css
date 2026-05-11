@@ -1,15 +1,16 @@
 @charset "UTF-8";
 
+
 /* ------- Chasse ------- */
 @import "chasse.css";
 /* ------- Galerie de personnages ------- */
-@import url("galerie.css");
+@import "galerie.css";
 /* ------- Fiches des personnages ------- */
 @import "fiches.css";
 
-@import url("menu.css");
+@import "menu.css";
 
-@import url("normalize.css");
+@import "normalize.css";
 
 /* Importation de polices Google Fonts */
 /* Exemple : font-family: 'Amiri', serif; */
@@ -33,6 +34,9 @@
     src: url(../Polices/digital_disco/DigitalDisco.ttf) format("ttf");
 }
 
+@view-transition {
+    navigation: auto;
+}
 /*
  * Points de rupture :
  * ==========================================================================
@@ -50,13 +54,38 @@
  * Typographie
  *
  */
+ 
+ /* ------- Reset ------- */
+ 
+:root {
+    justify-content: center;
+    background: url(../media/images/fond_page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    --menu-light: #ffffff;
+    --menu-dark: #000000;
+
+    font-family: "Afacad", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: white;
+}
+
+/** Accessibilité
+* Pour cacher visuellement tout en gardant accessible un contenu:
+* screen-reader-only ou visuallyhidden **/
+
+<<<<<<< HEAD
 /* ------- Reset ------- */
 
 
 
 @import url(menu.css);
 @import url(normalize.css);
+=======
+>>>>>>> origin/dev-charles
 .sauter {
     outline: none;
     color: #000000;
@@ -64,13 +93,125 @@
     padding: 0.25em 0;
     text-align: center;
 }
-body {
+
+.screen-reader-only,
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus,
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.page {
+    color:white;
+}
+
+@media (min-width: 48rem){
+    .page {
+        padding:10%;
+    }
+}
+
+.logo {
+    width: 30em;
+}
+.separateur {
+    width: 100%;
+}
+.video-frame {
+    width: 100%;
+}
+
+.legende {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.texte {
+    margin-bottom: 10px;
+}
+
+.texte.trois {
+    font-family: "Afacad", sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+.footer {
+    text-align: center;
+}
+
+.separateur-footer {
+    width: 100%;
+    justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+
+@media (min-width: 48rem) {
+    .separateur-footer {
+        width: 50%;
+    }
+}
+@media (min-width: 64rem) {
+    .separateur-footer {
+        width: 30em;
+    }
+}
+.menu-sociaux {
+    margin: 5em auto;
+    list-style-type: none;
     display: flex;
-    flex-direction: column;
-    background: url(../media/images/fond_page.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-sociaux__item {
+    max-width: 100%;
+}
+
+.menu-sociaux__lien {
+  /* display: block; */
+  margin: 0 6px;
+  font-size: 0;
+  opacity: 1;
+}
+
+.menu-sociaux__item:hover {
+    filter: invert(80%)
+}
+
+
+.text {
+  padding: 1em;
+  text-align: center;
+}
+
+.text {
+    padding: 1em;
+    text-align: center;
 }
 
 /* ------- Typographie ------- */
@@ -122,13 +263,109 @@ h2 {
 }
 
 @media (min-width: 64rem) {
-    h2 {
-        font-family: "DigitalDisco";
-        font-size: 40px;
-        font-weight: 500;
+    .lien__bouton {
+        width: 296px;
+        height: 80px;
+        padding: 15px 12px;
+        gap: 10px;
     }
 }
 
+@media (min-width: 48rem) {
+    .lien__bouton {
+        width: 300px;
+        height: 80px;
+        padding: 15px 12px;
+        gap: 10px;
+    }
+}
+
+
+.video-frame {  
+  width: 100%; 
+}
+
+.legende {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+    text-align: right;
+    margin-top:10px;
+    margin-bottom: 40px;
+}
+
+.text {
+    margin-bottom:10px;
+}
+
+.text.trois {
+    font-family: "Afacad", sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-top: 30px;
+}
+
+.footer {
+  text-align: center;
+  
+}
+
+.separateur-footer {
+    width:100%;
+    justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+
+@media (min-width: 48rem) {
+     .separateur-footer {
+        width:50%;
+    }
+}
+@media (min-width: 64rem) {
+    .separateur-footer {
+        width:30em;
+    }
+}
+.menu-sociaux {
+  margin: 5em auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-sociaux__item {
+  max-width: 100%;
+}
+
+.menu-sociaux__lien {
+  /* display: block; */
+  margin: 0 6px;
+  font-size: 0;
+  opacity: 1;
+}
+
+.menu-sociaux__item:hover {
+    filter: invert(80%)
+}
+
+
+.titre_filtre {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* bouton */
+
+@media (min-width: 48rem) {
+     .lien__bouton{
+        width:10%;
+     }
+    
+}
 .lien__bouton {
     font-family: "Amiri", serif;
     font-size: 20px;
@@ -136,18 +373,17 @@ h2 {
     color: white;
     text-decoration: none;
     text-align: center;
-
     display: flex;
-    width: 296px;
-    height: 80px;
-    padding: 15px 12px;
     justify-content: center;
     align-items: center;
+    width: 305px;
+    height: 80px;
+    padding: 15px 12px;
     gap: 10px;
     background: #a22222;
     box-shadow:
         0 5px 0 0 #ffa6a6 inset,
-        0 -11px 0 0 #0d3d63 inset,
+        0 -11px 0 0 hsl(207, 77%, 22%) inset,
         5px 0 0 0 #e24141 inset,
         -5px 0 0 0 #e24141 inset;
 }
@@ -188,39 +424,70 @@ h2 {
 .lien__image[aria-disabled] {
     pointer-events: none;
     background-color: rgb(10, 53, 53);
-    color:white;
+    color: white;
 }
 
-.video-frame {  
-  width: 100%; 
+.video-frame {
+    width: 100%;
 }
 
 .footer {
-  text-align: center;
+    text-align: center;
 }
 .menu-sociaux {
-  margin: 5em auto;
-  padding:10px;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    margin: 5em auto;
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .menu-sociaux__item {
-  max-width: 100%;
+    max-width: 100%;
 }
 .menu-sociaux__lien {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 0 6px;
-  background-repeat: no-repeat;
-  font-size: 0;
-  opacity: 1;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 6px;
+    background-repeat: no-repeat;
+    font-size: 0;
+    opacity: 1;
 }
-
 
 .footer__p {
-  padding: 2em;
-  text-align: center;
+    padding: 2em;
+    text-align: center;
 }
+
+::view-transition-old(root) {
+    animation: fade-out 0.25s ease;
+}
+
+::view-transition-new(root) {
+    animation: fade-in 0.25s ease;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.personnage {
+    margin: 10px;
+}    
+
