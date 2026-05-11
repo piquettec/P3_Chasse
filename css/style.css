@@ -45,8 +45,6 @@
 
 /* ------- Reset ------- */
 
-
-
 body {
     display: flex;
     flex-direction: column;
@@ -56,9 +54,9 @@ body {
     background-attachment: fixed;
 }
 
-@media (min-width: 48rem){
+@media (min-width: 48rem) {
     .page {
-        padding:10%;
+        padding: 10%;
     }
 }
 
@@ -68,8 +66,8 @@ body {
 .separateur {
     width: 100%;
 }
-.video-frame {  
-  width: 100%; 
+.video-frame {
+    width: 100%;
 }
 
 .legende {
@@ -78,12 +76,12 @@ body {
     font-style: italic;
     font-size: 1em;
     text-align: right;
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 
 .texte {
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .texte.trois {
@@ -93,57 +91,53 @@ body {
     margin-top: 30px;
 }
 .footer {
-  text-align: center;
-  
+    text-align: center;
 }
 
-
 .separateur-footer {
-    width:100%;
+    width: 100%;
     justify-content: center;
     margin-top: 6em;
     margin-bottom: 3em;
 }
 
 @media (min-width: 48rem) {
-     .separateur-footer {
-        width:50%;
+    .separateur-footer {
+        width: 50%;
     }
 }
 @media (min-width: 64rem) {
     .separateur-footer {
-        width:30em;
+        width: 30em;
     }
 }
 .menu-sociaux {
-  margin: 5em auto;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    margin: 5em auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .menu-sociaux__item {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .menu-sociaux__lien {
-  /* display: block; */
-  margin: 0 6px;
-  font-size: 0;
-  opacity: 1;
+    /* display: block; */
+    margin: 0 6px;
+    font-size: 0;
+    opacity: 1;
 }
 
 .menu-sociaux__item:hover {
-    filter: invert(80%)
+    filter: invert(80%);
 }
-
 
 .text {
-  padding: 1em;
-  text-align: center;
+    padding: 1em;
+    text-align: center;
 }
-
 
 /* ------- Typographie ------- */
 :root {
@@ -194,10 +188,20 @@ h2 {
 }
 
 @media (min-width: 64rem) {
-    h2 {
-        font-family: "DigitalDisco";
-        font-size: 40px;
-        font-weight: 500;
+    .lien__bouton {
+        width: 296px;
+        height: 80px;
+        padding: 15px 12px;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 48rem) {
+    .lien__bouton {
+        width: 296px;
+        height: 80px;
+        padding: 15px 12px;
+        gap: 10px;
     }
 }
 
@@ -209,12 +213,8 @@ h2 {
     text-decoration: none;
     text-align: center;
     display: flex;
-    width: 296px;
-    height: 80px;
-    padding: 15px 12px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     background: #a22222;
     box-shadow:
         0 5px 0 0 #ffa6a6 inset,
@@ -259,39 +259,38 @@ h2 {
 .lien__image[aria-disabled] {
     pointer-events: none;
     background-color: rgb(10, 53, 53);
-    color:white;
+    color: white;
 }
 
-.video-frame {  
-  width: 100%; 
+.video-frame {
+    width: 100%;
 }
 
 .footer {
-  text-align: center;
+    text-align: center;
 }
 .menu-sociaux {
-  margin: 5em auto;
-  padding:10px;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    margin: 5em auto;
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .menu-sociaux__item {
-  max-width: 100%;
+    max-width: 100%;
 }
 .menu-sociaux__lien {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 0 6px;
-  background-repeat: no-repeat;
-  font-size: 0;
-  opacity: 1;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 6px;
+    background-repeat: no-repeat;
+    font-size: 0;
+    opacity: 1;
 }
 
-
 .footer__p {
-  padding: 2em;
-  text-align: center;
+    padding: 2em;
+    text-align: center;
 }

@@ -36,7 +36,7 @@ function initialiser() {
     document.getElementById("quartier").innerHTML = objJSONepigraphes[intIdFicheCourante].QUARTIER;
     document.getElementById("adresse").innerHTML = objJSONepigraphes[intIdFicheCourante].ADRESSE;
 
-    document.getElementById("url_plaque").setAttribute("src", "../images/plaque_" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + "_w638.png",);
+    document.getElementById("url_plaque").setAttribute("src", "../media/images/Épigraphes/2x/" + objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + "_w638.png",);
     document.getElementById("url_plaque").setAttribute("alt", "Épigraphe de " + objJSONepigraphes[intIdFicheCourante].PRENOM + " " + objJSONepigraphes[intIdFicheCourante].NOM,);
     document.getElementById("transcript").innerHTML = objJSONepigraphes[intIdFicheCourante].PLAQUE_TRANSCRIPTION;
 

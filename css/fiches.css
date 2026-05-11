@@ -51,12 +51,18 @@
 .section_plaque {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
+.épigraphe {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
 .image_plaque {
-    width: 220px;
+    width: 15rem;
 }
 
 .transcript {
