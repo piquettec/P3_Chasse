@@ -56,11 +56,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     
-    color: oklch(from var(--couleur-clair-nav) 50% c h / 0.1);
-    color: oklch(from var(--couleur-sombre-nav) 50% c h / 0.9);
+    color-scheme: light dark;
     --couleur-clair-nav: white;
     --couleur-sombre-nav: black;
-    
+    --nav-background: light-dark(oklch(from var(--couleur-clair-nav) 90% c h / 0.9),
+                                 oklch(from var(--couleur-sombre-nav) l c h / 0.4));
+
     font-family: "Afacad", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -68,9 +69,7 @@
 }
 
 
-/** Accessibilité
-* Pour cacher visuellement tout en gardant accessible un contenu:
-* screen-reader-only ou visuallyhidden **/
+/** Accessibilité*/
 
 .sauter {
     outline: none;
