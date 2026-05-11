@@ -46,9 +46,8 @@
  /* ------- Reset ------- */
  
 :root {
-color-scheme: light dark;
-    --menu-light: #ffffff;
-    --menu-dark: #000000;
+    color-scheme: light dark;
+    --nav-background: light-dark(#ffffff, #000000);
 
     font-family: "Afacad", sans-serif;
     font-style: normal;
@@ -57,6 +56,19 @@ color-scheme: light dark;
     color: white;
 }
 
+nav a {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: calc(var(--i) * 0.15s);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /** Accessibilité
 * Pour cacher visuellement tout en gardant accessible un contenu:
 * screen-reader-only ou visuallyhidden **/
@@ -185,7 +197,6 @@ h2 {
 .text.trois {
     font-family: "Afacad", sans-serif;
     font-size: 1.1em;
-    text-transform: uppercase;
     margin-top: 2em;
     margin-top: 30px;
 }
@@ -232,7 +243,7 @@ h2 {
 }
 
 .menu-sociaux__item:hover {
-    filter: invert(80%)
+    filter: invert(50%)
 }
 
 
