@@ -120,7 +120,7 @@ const objCarte = {
 				<div class="image"><img width="100%" src="../media/images/${strIdEpigraphe}.png"/></div>
 				<div class="titre">${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</div>
 				<div class="adresse">Adresse : ${objEpigrapheCourant.ADRESSE}</div>
-					<a class="btn" href="../fiches/sciences-et-lettres.html?id=${strIdEpigraphe}&titre=${objEpigrapheCourant.PRENOM}-${objEpigrapheCourant.NOM}">
+					<a class="btn" href="../fiches/${objEpigrapheCourant.DOMAINE}?id=${strIdEpigraphe}&titre=${objEpigrapheCourant.PRENOM}-${objEpigrapheCourant.NOM}">
 						Consulter la fiche de ${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}
 					</a>
 				</div>`;

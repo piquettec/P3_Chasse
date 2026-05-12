@@ -20,7 +20,7 @@ const objJSONepigraphes = {
           "TITRE": "Edmund Alleyn dans son atelier",
           "CREDIT": "Gabor Szilasi"
       },
-      "DOMAINE": "Arts visuels",
+      "DOMAINE": "Arts-visuels",
       "CHASSE": {
           "CATEGORIE": "personnage",
           "INDICE": "un artiste peintre avant-gardiste",
@@ -48,7 +48,7 @@ const objJSONepigraphes = {
           "TITRE": "Philippe Aubert de Gaspé, vers 1870",
           "CREDIT": "Bibliothèque et Archives nationales du Québec"
       },
-      "DOMAINE": "Sciences et Lettres",
+      "DOMAINE": "Sciences-et-Lettres",
       "CHASSE": {
           "CATEGORIE": "objet",
           "INDICE": " a lu le roman «Les Anciens canadiens» ",
@@ -76,7 +76,7 @@ const objJSONepigraphes = {
           "TITRE": "En costume d’apparat",
           "CREDIT": "Photographe Roger Guillemette, Collection Musée Madame Henriette Belley"
       },
-      "DOMAINE": "Sports et spectacles",
+      "DOMAINE": "Sports-et-spectacles",
       "CHASSE": {
           "CATEGORIE": "objet",
           "INDICE": " a porté une robe extravagante ",
@@ -104,7 +104,7 @@ const objJSONepigraphes = {
           "TITRE": "Maison Kerhulu, entre 1939 et 1945",
           "CREDIT": "Agathe Chiasson-Leblanc"
       },
-	  "DOMAINE": "Sciences et Lettres",
+	  "DOMAINE": "Sciences-et-Lettres",
       "CHASSE": {
           "CATEGORIE": "lieu",
           "INDICE": " à la maison Kerhulu.",
@@ -132,7 +132,7 @@ const objJSONepigraphes = {
           "TITRE": "Brasserie Boswell, Québec, vers 1900",
           "CREDIT": "Musée McCord"
       },
-      "DOMAINE": "Économie et politique",
+      "DOMAINE": "Économie-et-politique",
       "CHASSE": {
           "CATEGORIE": "objet",
           "INDICE": " a bu une bouteille de bière ",
@@ -160,7 +160,7 @@ const objJSONepigraphes = {
           "TITRE": "Marthe Caillaud-Simard montrant son livre portant la signature du général de Gaulle",
           "CREDIT": "Collection privée"
       },
-      "DOMAINE": "Économie et politique",
+      "DOMAINE": "Économie-et-politique",
       "CHASSE": {
           "CATEGORIE": "personnage",
           "INDICE": "Une militante d’origine française",
@@ -188,7 +188,7 @@ const objJSONepigraphes = {
           "TITRE": "Un moment de répit",
           "CREDIT": "Photo Le Soleil"
       },
-      "DOMAINE": "Sports et spectacles",
+      "DOMAINE": "Sports-et-spectacles",
       "CHASSE": {
           "CATEGORIE": "lieu",
           "INDICE": " au 630 rue Boisseau.",
@@ -216,7 +216,7 @@ const objJSONepigraphes = {
           "TITRE": "L’ailier gauche des Citadelles, Camille Henry",
           "CREDIT": "Photo Collection privée"
       },
-      "DOMAINE": "Sports et spectacles",
+      "DOMAINE": "Sports-et-spectacles",
       "CHASSE": {
           "CATEGORIE": "personnage",
           "INDICE": "l’Anguille",
@@ -244,7 +244,7 @@ const objJSONepigraphes = {
           "TITRE": "Louis Jobin",
           "CREDIT": "Anonyme"
       },
-      "DOMAINE": "Arts visuels",
+      "DOMAINE": "Arts-visuels",
       "CHASSE": {
           "CATEGORIE": "lieu",
           "INDICE": " dans l'atelier du sculpteur.",
@@ -272,7 +272,7 @@ const objJSONepigraphes = {
           "TITRE": "Sigismund Mohr",
           "CREDIT": "Courtoisie de la collection historique de Bell Canada, 15414"
       },
-      "DOMAINE": "Sciences et Lettres",
+      "DOMAINE": "Sciences-et-Lettres",
       "CHASSE": {
           "CATEGORIE": "personnage",
           "INDICE": "Un ingénieur",
@@ -300,7 +300,7 @@ const objJSONepigraphes = {
           "TITRE": "Alfred Pellan",
           "CREDIT": "Musée national des beaux-arts du Québec"
       },
-      "DOMAINE": "Arts visuels",
+      "DOMAINE": "Arts-visuels",
       "CHASSE": {
           "CATEGORIE": "objet",
           "INDICE": " a acheté à fort prix une peinture surréaliste ",
