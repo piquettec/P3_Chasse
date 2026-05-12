@@ -8,7 +8,6 @@ window.addEventListener("load", initialiser);
 function initialiser() {
 
     document.getElementById("btnDebuterChasse").addEventListener("click", demarrerChasse);
-    localStorage.setItem("chasse_commencer", "false");
 
     if (localStorage.getItem("chasse_commencer") === "true") {
 
