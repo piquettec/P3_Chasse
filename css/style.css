@@ -458,7 +458,7 @@ h2 {
 @keyframes sortie-opacity {
     from {
         opacity: 1;
-        filter: brightness(1);
+        filter: brightness(0.8);
     }
 
     to {
@@ -484,7 +484,7 @@ h2 {
 
     to {
         opacity: 1;
-        filter: blur(0) brightness(1);
+        filter: blur(0) brightness(0.8);
     }
 }
 
