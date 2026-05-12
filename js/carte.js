@@ -13,7 +13,7 @@ const objCarte = {
 	arrMarqueurs: [],
 	fltLatCentreCarte: 46.811638,
 	fltLngCentreCarte: -71.223758,
-	strUrlImages: '../images/',
+	strUrlImages: '../media/images/',
 	intZoomCarte: 14,
 
 	/**
@@ -46,7 +46,7 @@ const objCarte = {
 			//à compléter en remplaçant toutes les valeurs fixes par celles du json de la fiche actuelle! :
 			const strGabaritContenuInfobulle =
 				`<div class="infobulle">
-				<div class="image"><img width="150" src="../images/fiches/${strIdEpigraphe}.jpg"/></div>
+				<div class="image"><img width="100%" src="../media/images/${strIdEpigraphe}.png"/></div>
 				<div class="titre">${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</div>
 				<div class="adresse">Adresse : ${objEpigrapheCourant.ADRESSE}</div>
 					<a class="btn" href="../fiches/sciences-et-lettres.html?id=${strIdEpigraphe}&titre=${objEpigrapheCourant.PRENOM}-${objEpigrapheCourant.NOM}">
