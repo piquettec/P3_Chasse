@@ -271,7 +271,7 @@ input:not(:focus), select:not(:focus) {
 }
 
 input:focus, select:focus {
-    filter: brightness(1.05) drop-shadow(0 0 8px rgba(139, 0, 0, 0.5));
+    filter: brightness(1.05) drop-shadow(0 0 8px rgba(125, 139, 0, 0.5));
 }
 
 button[type="submit"] {
