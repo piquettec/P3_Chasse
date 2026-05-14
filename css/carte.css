@@ -1,4 +1,3 @@
-/* Contenu principal de l'infobulle */
 .infobulle {
     width: 280px;
     padding: 10px;
@@ -45,5 +44,5 @@
 }
 
 .infobulle .adresse {
-    margin-bottom: px; /* ou 0 */
+    margin-bottom: 4px; /* ou 0 */
 }
