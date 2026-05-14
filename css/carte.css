@@ -1,0 +1,49 @@
+/* Contenu principal de l'infobulle */
+.infobulle {
+    width: 280px;
+    padding: 10px;
+}
+
+/* Image */
+.infobulle .image img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* Nom de la personne */
+.infobulle .titre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+/* Adresse */
+.infobulle .adresse {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Bouton */
+.infobulle .btn {
+    display: block;
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.infobulle .btn:hover {
+    background-color: #5a0000;
+}
+
+.infobulle .titre {
+    margin-bottom: 2px; /* ou 0 */
+}
+
+.infobulle .adresse {
+    margin-bottom: px; /* ou 0 */
+}
