@@ -61,7 +61,7 @@
  fieldset label {
     font-size: 0.8rem;
     font-weight: 500;
-    color: #1a1a2e;
+    color: #ffffff;
 }
 
 fieldset label small {
@@ -185,10 +185,6 @@ ul {
 }
 
 
-
-
-
-
 /* ------- Infolettre ------- */
 
 .infolettre {
@@ -260,3 +256,29 @@ button[type="submit"]:hover {
     font-size: 0.85rem;
 }
 
+input:not(:focus), select:not(:focus) {
+    filter: blur(1px) brightness(0.95);
+    transition: filter 0.3s ease;
+}
+
+input:focus, select:focus {
+    filter: none;
+}
+
+input:not(:focus), select:not(:focus) {
+    filter: blur(1px) brightness(0.85) grayscale(0.5);
+    transition: filter 0.4s ease;
+}
+
+input:focus, select:focus {
+    filter: brightness(1.05) drop-shadow(0 0 8px rgba(139, 0, 0, 0.5));
+}
+
+button[type="submit"] {
+    filter: brightness(1);
+    transition: filter 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    filter: brightness(1.2) drop-shadow(0 4px 10px rgba(139, 0, 0, 0.6));
+}
