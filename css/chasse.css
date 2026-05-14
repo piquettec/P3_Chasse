@@ -123,3 +123,9 @@
     transform: scale(1);
   }
 }
+
+.bouton__chasse {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
