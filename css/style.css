@@ -68,6 +68,9 @@
     line-height: 150%;
 }
 
+body {
+    padding: 0;
+}
 
 /** Accessibilité*/
 
